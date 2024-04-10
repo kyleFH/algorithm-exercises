@@ -43,7 +43,7 @@ const preorderTraversal = function(root){
 }
 
 const k = 10
-const allPaht = []
+const allpath = []
 preorderTraversal(tree).forEach((item,index) => {
     let num = 0
     item.reduce((ite,current) => {
@@ -51,10 +51,10 @@ preorderTraversal(tree).forEach((item,index) => {
         const retu = ite + current;
         if(retu === k){
             const pathK = item.slice(0,num + 1)
-            allPaht.push(pathK)
+            allpath.push(pathK)
         }
         return retu
     })
 })
 
-console.log('allPaht',allPaht)
+console.log('allpath',allpath)

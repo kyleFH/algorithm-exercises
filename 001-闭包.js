@@ -3,13 +3,13 @@
 // 1. 初次调用返回值为1
 // 2. 每个计数器所统计的数字是独立的
 // 测试用例：
-// const timer1 = closure()
-// console.log(timer1()) // 1
-// console.log(timer1()) // 2
+const timer1 = closure()
+console.log(timer1()) // 1
+console.log(timer1()) // 2
 
-// const time2 = closure()
-// console.log(timer2()) // 1
-// console.log(timer1()) // 3
+const timer2 = closure()
+console.log(timer2()) // 1
+console.log(timer1()) // 3
 
 const closure = () => {
     let num = 1
